@@ -61,3 +61,21 @@ Go has 3 first class container types that can be used to store collections of el
  - Map (an associative data structure that allows distinct keys to be arbitrarily pairs with or mapped to values)
 
 Go has one and one only loop structure...the for loop you can accomplish a while/do-while loop using the for loop
+
+### Goroutines
+"One of gos most powerful features is the go keyword. Any function call prepended with the go keyword will run as usual, but the caller can proceed uninterrupted rather than wait for the function to return.
+Under the hood, the function is executed as a lightweight concurrently executing process called a goroutine"
+
+## Cloud Native Patterns
+
+### Stability Patterns
+The stability patterns address one or more assumptions called out by the fallacies of distributed computing. Theyre generally intened to be applied by distributed applications to improve their own stability and the stability of the larger system
+
+#### Circuit Breaker
+Circuit Breaker automatically degrades service functions in response to a likely fault, preventing larger or cascading failures by eliminating recurring errors and providing reasonable error responses
+Includes the following participants:
+- Circuit
+  - The function that interacts with the service 
+- Breaker
+  - A closure with the same function signature as circuit
+
